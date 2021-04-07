@@ -8,6 +8,7 @@ spring:
 logging:
   file:
     name: /opt/logs/100003171/apollo-assembly.log
+  level.root: debug
 
 management:
   health:
@@ -18,7 +19,8 @@ management:
 
 eureka:
   instance:
-    hostname: ${hostname:localhost}
+    hostname: localhost
+#    hostname: ${hostname:localhost}
     preferIpAddress: true
     status-page-url-path: /info
     health-check-url-path: /health
@@ -29,6 +31,7 @@ eureka:
     serviceUrl:
       # This setting will be overridden by eureka.service.url setting from ApolloConfigDB.ServerConfig or System Property
       # see com.ctrip.framework.apollo.biz.eureka.ApolloEurekaClientConfig
+#      defaultZone: http://localhost:8080/eureka/
       defaultZone: http://${eureka.instance.hostname}:8080/eureka/
     healthcheck:
       enabled: true
