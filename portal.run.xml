@@ -1,12 +1,12 @@
 <component name="ProjectRunConfigurationManager">
-    <configuration default="false" name="portal" type="Application" factoryName="Application">
-        <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-        <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-        <option name="MAIN_CLASS_NAME" value="com.ctrip.framework.apollo.portal.PortalApplication" />
-        <module name="apollo-portal" />
-        <option name="VM_PARAMETERS" value="-Dapollo_profile=github,auth -Ddev_meta=http://localhost:8080/ -Dserver.port=8070 -Dspring.datasource.url=jdbc:mysql://localhost:13306/ApolloPortalDB?characterEncoding=utf8 -Dspring.datasource.username=root -Dspring.datasource.password= -Dlogging.file.name=logs/apollo-portal.log -Dlogging.level.com.ctrip=debug" />
-        <method v="2">
-            <option name="Make" enabled="true" />
-        </method>
-    </configuration>
+  <configuration default="false" name="portal" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="com.ctrip.framework.apollo.portal.PortalApplication" />
+    <module name="apollo-portal" />
+    <option name="VM_PARAMETERS" value="-Dapollo_profile=github,auth -Ddev_meta=http://localhost:8080/ -Dserver.port=8070 -Dspring.datasource.url=jdbc:mysql://localhost13306/ApolloPortalDB?characterEncoding=utf8 -Dspring.datasource.username=root -Dspring.datasource.password=sakura123 -Dlogging.file.name=logs/apollo-portal.log -Dlogging.level.com.ctrip=debug" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
 </component>

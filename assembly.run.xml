@@ -1,57 +1,13 @@
 <component name="ProjectRunConfigurationManager">
-    <configuration default="false" name="assembly" type="Application" factoryName="Application">
-        <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-        <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-        <option name="MAIN_CLASS_NAME" value="com.ctrip.framework.apollo.assembly.ApolloApplication" />
-        <module name="apollo-assembly" />
-        <option name="PROGRAM_PARAMETERS" value="--configservice --adminservice " />
-        <option name="VM_PARAMETERS" value="-Dapollo_profile=github -Dspring.datasource.url=jdbc:mysql://localhost:13306/ApolloConfigDB?characterEncoding=utf8 -Dspring.datasource.username=root -Dspring.datasource.password= -Dfile.encoding=UTF-8 -Dlogging.file.name=logs/apollo-assembly.log" />
-        <method v="2">
-            <option name="Make" enabled="true" />
-        </method>
-    </configuration>
+  <configuration default="false" name="assembly" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="com.ctrip.framework.apollo.assembly.ApolloApplication" />
+    <module name="apollo-assembly" />
+    <option name="PROGRAM_PARAMETERS" value="--configservice --adminservice " />
+    <option name="VM_PARAMETERS" value="-Dapollo_profile=github -Dspring.datasource.url=jdbc:mysql://localhost:3306/ApolloConfigDB?characterEncoding=utf8 -Dspring.datasource.username=root -Dspring.datasource.password=sakura123 -Dfile.encoding=UTF-8 -Dlogging.file.name=logs/apollo-assembly.log" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
 </component>
-
-        <!--        spring:-->
-        <!--        profiles:-->
-        <!--        active: ${apollo_profile}-->
-        <!--        cloud:-->
-        <!--        consul:-->
-        <!--        enabled: false-->
-        <!--        inetutils:-->
-        <!--        timeout-seconds: 20-->
-
-        <!--        logging:-->
-        <!--        level:-->
-        <!--        root: debug-->
-        <!--        file:-->
-        <!--        name: /opt/logs/100003171/apollo-assembly.log-->
-
-        <!--        management:-->
-        <!--        health:-->
-        <!--        status:-->
-        <!--        order: DOWN, OUT_OF_SERVICE, UNKNOWN, UP-->
-        <!--        ldap:-->
-        <!--        enabled: false-->
-
-        <!--        eureka:-->
-        <!--        instance:-->
-        <!--        #    hostname: ${hostname:localhost}-->
-        <!--        hostname: ${hostname:localhost}-->
-        <!--        preferIpAddress: true-->
-        <!--        status-page-url-path: /info-->
-        <!--        health-check-url-path: /health-->
-        <!--        server:-->
-        <!--        peerEurekaNodesUpdateIntervalMs: 60000-->
-        <!--        enableSelfPreservation: false-->
-        <!--        eviction-interval-timer-in-ms: 20000-->
-        <!--        client:-->
-        <!--        serviceUrl:-->
-        <!--        # This setting will be overridden by eureka.service.url setting from ApolloConfigDB.ServerConfig or System Property-->
-        <!--        # see com.ctrip.framework.apollo.biz.eureka.ApolloEurekaClientConfig-->
-        <!--        defaultZone: http://localhost:8080/eureka-->
-        <!--        #      defaultZone: http://${eureka.instance.hostname}:8080/eureka/-->
-        <!--        healthcheck:-->
-        <!--        enabled: true-->
-        <!--        eurekaServiceUrlPollIntervalSeconds: 10000-->
-
